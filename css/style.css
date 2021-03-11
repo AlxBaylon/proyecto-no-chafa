@@ -32,14 +32,26 @@ html{
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     place-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
-.item-one__members-large{ grid-area: 1 / 1 / 4 / 2;}
-.item-one__members-large img{ width: 200px;}
-.item-one__members-short{ grid-area: 1 / 2 / 4 / 3;}
-.item-one__members-short img{ width: 110px;}
+.item-one__members-large{ 
+    grid-area: 1 / 1 / 4 / 2;
+    height: 100%;
+    overflow: hidden;
+    width: 70vw;
+}
+.item-one__members-large img{ height: 300px;}
+.item-one__members-short{
+    grid-area: 1 / 2 / 4 / 3;
+    width: 30vw;
+    height: 100%;
+}
+.item-one__members-short img{ height: 300px;}
 .container__item-one p{ 
     text-align: center;
-    color: var(--yellow-orange);
+    color: var(--background-blue);
     font-size: 30px;
     font-weight: bold;
 }
